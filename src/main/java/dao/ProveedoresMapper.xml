@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- Generamos una etiqueta -->
+
+
+<!-- configuracion para que funcione la clase categoria -->
+<mapper namespace="dao.ProveedoresMapper">
+    
+    <!-- el id es definido por nosotros mismo -->
+    <resultMap id="ProveedoresMap" type="models.Proveedores">
+        <!-- Relacionamos las columnas de la BD y Los atributos de la clase -->
+        <id column="id_proveedor" property="idProveedor"/>
+        <result column="nombrecompañia" property="nombreCompañia"/>
+        <result column="nombrecontacto" property="nombreContacto"/>
+        <result column="cargocontacto" property="cargoContacto"/>
+        <result column="direccion" property="direccion"/>
+        <result column="ciudad" property="ciudad"/>
+        <result column="region" property="region"/>
+        <result column="codpostal" property="codPsotal"/>
+        <result column="pais" property="pais"/>
+        <result column="telefono" property="telefono"/>
+        <result column="paginaprincipal" property="paginaPrincipal"/>
+        
+        
+    </resultMap>
+     
+     <select id="listarProveedores" resultMap="ProveedoresMap"> 
+           select*from proveedores;
+     </select>
+</mapper>

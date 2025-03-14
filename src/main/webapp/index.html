@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Definimos como se observara la pestaña del enlace -->
+<head>
+<meta charset="UTF-8">
+<title> Gestion de Inventario | SISE </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<!-- DEfinimos el cuerpo  -->
+
+<body>
+<!-- Definimos la cabecera, para ver como se define -->
+<header>
+    <div class="flex gap-4 bg-green-600 justify-center h-[50px] items-center">
+         <!-- CON EL SGTE COMANDOS REFERENCIAMOS LAS PAGINAS HIJAS DE ALGUNOS BOTONES, DEBE ESTAR SINCRONIZADO CON OTRA .jsp--> 
+         
+         <!-- Vinculamos con el inicio -->
+         <a href="/Gestion_Inventario" class="h-auto text-white hover:bg-green-700 p-2 rounded-md cursor-pointer border border-white border-solid"> Inicio </a>
+         
+         
+         
+         <!-- Vinculamos con la categoria -->
+         <a href="/Gestion_Inventario/Categorias" class="h-auto text-white hover:bg-green-700 p-2 rounded-md cursor-pointer "> Categorias </a>
+         <a href="/Gestion_Inventario/Clientes" class="h-auto text-white hover:bg-green-700 p-2 rounded-md cursor-pointer "> Clientes </a>
+         <a href="/Gestion_Inventario/Productos" class="h-auto text-white hover:bg-green-700 p-2 rounded-md cursor-pointer "> Productos </a>
+         <a href="/Gestion_Inventario/Proveedores" class="h-auto text-white hover:bg-green-700 p-2 rounded-md cursor-pointer "> Proveedores </a>
+         <!-- 
+         1.- Empieza en Index
+         2.- Ahora vamos a CategoriaServelet OJO TENER CUIDADO COMO ESTA LA WEB          
+          -->         
+         
+    </div>
+</header>
+
+<main class="p-4">
+   <h1 class="text-3xl font-bold mb-4 text-center">Bienvenidos a Gestión de Inventario (prueba) !!!</h1>
+  
+  <img class="mx-auto block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIcwXwKqczYK3WxJUXqVYysJ9vMrsBI4EQEw&s" alt="Imagen de gestión de inventario">
+  
+   <div class="bg-white rounded-lg shadow-md p-6">
+      <p class="text-lg leading-relaxed mb-4">
+        La gestión de inventario es el proceso de supervisar, controlar y optimizar el flujo de bienes y materiales dentro de una empresa o almacén. Su objetivo principal es asegurar que se disponga de la cantidad adecuada de productos en el momento oportuno, evitando tanto el desabastecimiento como el exceso de stock. Esto se logra mediante el seguimiento de las existencias, la planificación de reabastecimientos, y el uso de métodos y herramientas para mantener un balance eficiente entre la demanda y la oferta de productos. Una gestión de inventarios adecuada mejora la eficiencia operativa, reduce costos y asegura un buen nivel de servicio al cliente.
+      </p>
+    </div> 
+  
+</main>
+</body>
+</html>

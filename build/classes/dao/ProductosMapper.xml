@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- Generamos una etiqueta -->
+
+
+<!-- configuracion para que funcione la clase categoria -->
+<mapper namespace="dao.ProductosMapper">
+    
+    <!-- el id es definido por nosotros mismo -->
+    <resultMap id="ProductosMap" type="models.Productos">
+        <!-- Relacionamos las columnas de la BD y Los atributos de la clase -->
+        <id column="id_producto" property="idPrducto"/>
+        <result column="nombreproducto" property="nombrePrducto"/>
+        <result column="descripcionproducto" property="descripsionPrducto"/>
+        <result column="cantidadporunidad" property="cantidadUnida"/>
+        <result column="preciounidad" property="precioUnidad"/>
+        <result column="stock_actual" property="stockActual"/>
+        <result column="stock_minimo" property="stockMinimo"/>
+        <result column="stock_pedido" property="stockPedido"/>
+        <result column="id_proveedor" property="idProveedor"/>
+        <result column="id_categoria" property="idCategoria"/>
+          
+    </resultMap>
+     
+     <select id="listarProductos" resultMap="ProductosMap"> 
+           select*from productos;
+     </select>
+</mapper>
