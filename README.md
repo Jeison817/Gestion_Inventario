@@ -48,6 +48,6 @@ Relacionado con usuarios (quién generó el reporte) y clientes (si es un report
 
 *RUIZ TAFUR JEYVIN JESUS*
 
-*CONTRERAS JEISON*
+*JEISON JOSIMAR CONTRERAS MEZA*
 
 
