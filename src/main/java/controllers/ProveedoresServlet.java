@@ -17,12 +17,12 @@ import services.impl.ProveedoresServiceImpl;
 
 
 @WebServlet("/Proveedores")
-public class ProveedoresServelet extends HttpServlet {
+public class ProveedoresServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	// definimos una clase para tomar objetos, el cual es "Categoria"
 				private final ProveedoresService proveedoresService;
-    public ProveedoresServelet() {
+    public ProveedoresServlet() {
         super();
      // Aqui utilizamos lo definido arriba, es decir inicializamos 
         proveedoresService= new ProveedoresServiceImpl();

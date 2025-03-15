@@ -15,12 +15,12 @@ import services.CategoriasService;
 import services.impl.CategoriaServiceImpl;
 
 @WebServlet("/Categorias")
-public class CategoriasServelet extends HttpServlet {
+public class CategoriasServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	// definimos una clase para tomar objetos, el cual es "Categoria"
 		private final CategoriasService categoriasService; 
 	
-    public CategoriasServelet() {
+    public CategoriasServlet() {
         super();
      // Aqui utilizamos lo definido arriba, es decir inicializamos 
         categoriasService= new CategoriaServiceImpl();

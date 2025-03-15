@@ -18,11 +18,11 @@ import services.impl.ClientesServiceImpl;
 
 // definimos una direccion mas directa "Clientes"
 @WebServlet("/Clientes")
-public class ClientesServelet extends HttpServlet {
+public class ClientesServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	// definimos una clase para tomar objetos, el cual es "Categoria"
 			private final ClientesService clientesService;
-    public ClientesServelet() {
+    public ClientesServlet() {
         super();
      // Aqui utilizamos lo definido arriba, es decir inicializamos 
         clientesService= new ClientesServiceImpl();

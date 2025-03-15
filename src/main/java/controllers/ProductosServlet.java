@@ -19,12 +19,12 @@ import services.impl.ProductosServiceImpl;
  * Servlet implementation class ProductosServelet
  */
 @WebServlet("/Productos")
-public class ProductosServelet extends HttpServlet {
+public class ProductosServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	// definimos una clase para tomar objetos, el cual es "Categoria"
 				private final ProductosService productosService;
-    public ProductosServelet() {
+    public ProductosServlet() {
         super();
      // Aqui utilizamos lo definido arriba, es decir inicializamos 
         productosService= new ProductosServiceImpl();
